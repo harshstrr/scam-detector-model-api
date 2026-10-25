@@ -1,15 +1,9 @@
 {
   "version": 2,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "server.js"
+      "source": "/(.*)",
+      "destination": "/server.js"
     }
-  ],
-  "functions": {
-    "server.js": {
-      "memory": 2048,
-      "maxDuration": 60
-    }
-  }
+  ]
 }
